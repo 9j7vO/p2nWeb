@@ -12,8 +12,8 @@
 body{font-family:'Inter',sans-serif;background:#05070a;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 .hero{min-height:100vh;background:linear-gradient(180deg,rgba(5,7,10,0.5),rgba(5,7,10,0.95)),url('https://www.ggrecon.com/media/cthhwg2p/call-of-duty-vanguard-perks.jpeg');background-size:cover;background-attachment:fixed}
 .nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:14px 36px;background:rgba(8,10,14,0.85);backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,0.06)}
-.logo{font-weight:900;font-size:18px;letter-spacing:1.2px}.logo a{color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
-.logo::before{content:'';width:8px;height:8px;background:#7cf0a0;border-radius:50%;box-shadow:0 0 12px #7cf0a0;display:inline-block}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px;letter-spacing:-1.5px;text-transform:uppercase;font-family:sans-serif}.logo a{color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+
 .links{display:flex;gap:6px}
 .pill{font-size:11px;letter-spacing:0.8px;font-weight:600;padding:9px 18px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.6);text-decoration:none;border-radius:100px;transition:all 0.35s}
 .pill:hover{background:rgba(255,255,255,0.1);color:#fff;transform:translateY(-1px)}.pill.active{background:#fff;color:#000;font-weight:800;box-shadow:0 4px 20px rgba(255,255,255,0.15)}
@@ -83,9 +83,12 @@ img{max-width:100%}
 <body>
 <div class="hero">
   <div class="nav">
-    <div class="logo"><a href="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImZyIj48aGVhZD48bWV0YSBjaGFyc2V0PSJVVEYtOCI+PG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjx0aXRsZT5QMk5JSUxOQTwvdGl0bGU+CjxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzcwMDs4MDA7OTAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPHN0eWxlPip7bWFyZ2luOjA7cGFkZGluZzowO2JveC1zaXppbmc6Ym9yZGVyLWJveH1ib2R5e2ZvbnQtZmFtaWx5OidJbnRlcicsc2Fucy1zZXJpZjtiYWNrZ3JvdW5kOiMwNTA3MGE7Y29sb3I6I2ZmZjtvdmVyZmxvdy14OmhpZGRlbn0KLmhlcm97bWluLWhlaWdodDoxMDB2aDtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudChyZ2JhKDUsNywxMCwwLjU1KSwgcmdiYSg1LDcsMTAsMC44NSkpLCB1cmwoJ2h0dHBzOi8vd3d3LmdncmVjb24uY29tL21lZGlhL2N0aGh3ZzJwL2NhbGwtb2YtZHV0eS12YW5ndWFyZC1wZXJrcy5qcGVnJyk7YmFja2dyb3VuZC1zaXplOmNvdmVyO2JhY2tncm91bmQtcG9zaXRpb246Y2VudGVyfQoubmF2e2Rpc3BsYXk6ZmxleDtqdXN0aWZ5LWNvbnRlbnQ6c3BhY2UtYmV0d2VlbjthbGlnbi1pdGVtczpjZW50ZXI7cGFkZGluZzoyNHB4IDQ4cHh9LmxvZ297Zm9udC13ZWlnaHQ6OTAwO2ZvbnQtc2l6ZToyNHB4fS5sb2dvIGF7Y29sb3I6I2ZmZjt0ZXh0LWRlY29yYXRpb246bm9uZX0KLmxpbmtze2Rpc3BsYXk6ZmxleDtnYXA6OHB4fS5waWxse3BhZGRpbmc6MTBweCAyMHB4O2JhY2tncm91bmQ6cmdiYSgyNTUsMjU1LDI1NSwwLjA4KTtib3JkZXI6MXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4wOCk7Y29sb3I6I2ZmZjt0ZXh0LWRlY29yYXRpb246bm9uZTtmb250LXNpemU6MTNweDtiYWNrZHJvcC1maWx0ZXI6Ymx1cigxMHB4KTt0cmFuc2l0aW9uOi4yc30ucGlsbDpob3ZlcntiYWNrZ3JvdW5kOnJnYmEoMjU1LDI1NSwyNTUsMC4xNSl9LnBpbGwuYWN0aXZle2JhY2tncm91bmQ6I2ZmZjtjb2xvcjojMDAwO2ZvbnQtd2VpZ2h0OjcwMH0KLm1haW57ZGlzcGxheTpmbGV4O2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO3BhZGRpbmc6MTR2aCA0OHB4IDYwcHg7Z2FwOjQwcHg7cG9zaXRpb246cmVsYXRpdmU7ei1pbmRleDoxMH0KLmxlZnR7bWF4LXdpZHRoOjYyMHB4fS5sZWZ0IGgxe2ZvbnQtc2l6ZTo1NHB4O2xpbmUtaGVpZ2h0OjEuMDU7Zm9udC13ZWlnaHQ6MzAwO2xldHRlci1zcGFjaW5nOi0xcHh9LmxlZnQgaDEgYntmb250LXdlaWdodDo5MDB9Ci5yaWdodHt3aWR0aDo0NjBweDttYXgtd2lkdGg6MTAwJX0uam9pbnttYXJnaW4tYm90dG9tOjEycHg7Zm9udC1zaXplOjEycHg7bGV0dGVyLXNwYWNpbmc6MXB4O2NvbG9yOnJnYmEoMjU1LDI1NSwyNTUsMC42KX0KLmJ0bi1tYWlue3dpZHRoOjEwMCU7aGVpZ2h0OjkwcHg7Ym9yZGVyOjFweCBzb2xpZCAjZmYwMDUwO2JhY2tncm91bmQ6cmdiYSgwLDAsMCwwLjQpO2Rpc3BsYXk6ZmxleDtmbGV4LWRpcmVjdGlvbjpjb2x1bW47anVzdGlmeS1jb250ZW50OmNlbnRlcjthbGlnbi1pdGVtczpjZW50ZXI7Y29sb3I6I2ZmZjt0ZXh0LWRlY29yYXRpb246bm9uZTtiYWNrZHJvcC1maWx0ZXI6Ymx1cigxMnB4KTt0cmFuc2l0aW9uOi4yc30uYnRuLW1haW46aG92ZXJ7YmFja2dyb3VuZDpyZ2JhKDI1NSwwLDgwLDAuMTUpO3RyYW5zZm9ybTp0cmFuc2xhdGVZKC0ycHgpfS5idG4tbWFpbiAudG9we2ZvbnQtc2l6ZToyMHB4O2ZvbnQtd2VpZ2h0OjgwMH0uYnRuLW1haW4gLnN1Yntmb250LXNpemU6MTJweDtvcGFjaXR5Oi44O21hcmdpbi10b3A6MnB4fQouZGlzY2xhaW1lcntmb250LXNpemU6MTBweDttYXJnaW46MTJweCAwIDIwcHg7Y29sb3I6Izk0YTNiODtsaW5lLWhlaWdodDoxLjR9Ci5idG4tc2Vjb25ke3dpZHRoOjEwMCU7aGVpZ2h0OjQ4cHg7Ym9yZGVyOjFweCBzb2xpZCByZ2JhKDI1NSwyNTUsMjU1LDAuNik7YmFja2dyb3VuZDpyZ2JhKDAsMCwwLDAuMik7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2NvbG9yOiNmZmY7dGV4dC1kZWNvcmF0aW9uOm5vbmU7Zm9udC1zaXplOjEycHg7bGV0dGVyLXNwYWNpbmc6MXB4O2JhY2tkcm9wLWZpbHRlcjpibHVyKDhweCk7dHJhbnNpdGlvbjouMnN9LmJ0bi1zZWNvbmQ6aG92ZXJ7YmFja2dyb3VuZDpyZ2JhKDI1NSwyNTUsMjU1LDAuMSl9CkBtZWRpYShtYXgtd2lkdGg6OTAwcHgpey5tYWlue2ZsZXgtZGlyZWN0aW9uOmNvbHVtbjtwYWRkaW5nOjh2aCAyMnB4fS5uYXZ7cGFkZGluZzoxOHB4IDIycHh9LmxlZnQgaDF7Zm9udC1zaXplOjM2cHh9fQo8L3N0eWxlPjwvaGVhZD48Ym9keT48ZGl2IGNsYXNzPSJoZXJvIj48ZGl2IGNsYXNzPSJuYXYiPjxkaXYgY2xhc3M9ImxvZ28iPjxhIGhyZWY9ImluZGV4Lmh0bWwiPlAyTklJTE5BPC9hPjwvZGl2PjxkaXYgY2xhc3M9ImxpbmtzIj48YSBjbGFzcz0icGlsbCBhY3RpdmUiIGhyZWY9ImluZGV4Lmh0bWwiPkFjY3VlaWxzPC9hPjxhIGNsYXNzPSJwaWxsIiBocmVmPSJmYXEuaHRtbCI+RkFRPC9hPjxhIGNsYXNzPSJwaWxsIiBocmVmPSJqb3Vlci5odG1sIj5Kb3VlcjwvYT48YSBjbGFzcz0icGlsbCIgaHJlZj0icG9ydC5odG1sIj5Qb3J0PC9hPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9Im1haW4iPjxkaXYgY2xhc3M9ImxlZnQiPjxoMT51dGlsaXNlciAmIGluc3RhbGxlciBkZXMgPGI+b3V0aWxzIGV0IGluZm9ybWVyIHZvdXMgc3VyIGRlcyBwcm9qZXRzIHRvdXQgc2EgYXZlYyBQMk48L2I+PC9oMT48L2Rpdj48ZGl2IGNsYXNzPSJyaWdodCI+PGRpdiBjbGFzcz0iam9pbiI+Q0UgUFJPSkVUIEVTVCBBRkZJTEnDiSDDgCBBVUNVTiBTVFVESU88L2Rpdj48YSBjbGFzcz0iYnRuLW1haW4iIGhyZWY9IiMiPjxzcGFuIGNsYXNzPSJ0b3AiPnTDqWzDqWNoYXJnZXIgSnVwOWl3PC9zcGFuPjxzcGFuIGNsYXNzPSJzdWIiPkp1cDlpdy5leGU8L3NwYW4+PC9hPjxkaXYgY2xhc3M9ImRpc2NsYWltZXIiPkNlIHByb2dyYW1tZSBxdWUgdm91cyBpbnN0YWxsZXIgZXN0IHRvdGFsZW1lbnQgc2FmZSB2b3VzIHBvdXZleiBsZSB2w6lyaWZpZXIgc2kgdm91cyB2b3VsZXouPC9kaXY+PGEgY2xhc3M9ImJ0bi1zZWNvbmQiIGhyZWY9InBvcnQuaHRtbCI+RVhQTE9SRVIgTEVTIEpFVVgg4oaSPC9hPjwvZGl2PjwvZGl2PjwvZGl2PjwvYm9keT48L2h0bWw+Cg==">P2NIILNA</a></div>
+    <div class="logo"><a href="index.html">P2NIIH</a></div>
     <div class="links">
       <a class="pill " href="index.html">Accueil</a>
+      <a class="pill " href="hq.html">Hq</a>
+      <a class="pill " href="info.html">Info</a>
+      <a class="pill " href="forum.html">Forum</a>
       <a class="pill active" href="faq.html">FAQ</a>
       <a class="pill " href="jouer.html">Jouer</a>
       <a class="pill " href="port.html">Port</a>
@@ -132,6 +135,19 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     if(!wasOpen) item.classList.add('open');
   });
 });
+</script>
+<script src='https://unpkg.com/@discord/embedded-app-sdk'></script>
+<script>
+  const discordSdk = new window.discordSdk.DiscordSDK('1566281154989133826');
+  async function setupDiscordSdk() {
+    try {
+      await discordSdk.ready();
+      console.log('Discord SDK is ready');
+    } catch (e) {
+      console.warn('Discord SDK not detected (normal browser)');
+    }
+  }
+  setupDiscordSdk();
 </script>
 </body>
 </html>

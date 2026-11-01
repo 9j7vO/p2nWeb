@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Forum P2N : Actualités, mises à jour et support communautaire Call of Duty.">
+<meta name="theme-color" content="#080b10">
+<title>P2N | Forum</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#05070a;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.hero{min-height:100vh;background:linear-gradient(180deg,rgba(5,7,10,0.5),rgba(5,7,10,0.95)),url('https://www.psu.com/wp/wp-content/uploads/2021/11/Call-Of-Duty-Vanguard-Polina-Petrova.jpg');background-size:cover;background-attachment:fixed;background-position:center 20%}
+.nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:14px 36px;background:rgba(8,10,14,0.85);backdrop-filter:blur(24px) saturate(1.2);border-bottom:1px solid rgba(255,255,255,0.06)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px;letter-spacing:-1.5px;text-transform:uppercase;font-family:sans-serif}.logo a{color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+
+.links{display:flex;gap:6px}
+.pill{font-size:11px;letter-spacing:0.8px;font-weight:600;padding:9px 18px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.6);text-decoration:none;border-radius:100px;transition:all 0.35s cubic-bezier(0.16,1,0.3,1)}
+.pill:hover{background:rgba(255,255,255,0.1);color:#fff;transform:translateY(-1px)}.pill.active{background:#fff;color:#000;font-weight:800;box-shadow:0 4px 20px rgba(255,255,255,0.15)}
+
+.content{padding:50px 36px;max-width:1000px;margin:0 auto;position:relative;z-index:10}
+.content h1{font-size:44px;font-weight:900;letter-spacing:-1px;margin-bottom:8px;animation:fadeUp 0.8s}
+.sub{color:rgba(255,255,255,0.5);font-size:13px;letter-spacing:1px;margin-bottom:36px;animation:fadeUp 0.8s 0.1s both}
+
+.posts{display:flex;flex-direction:column;gap:24px}
+.post-card{
+  background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden;
+  transition:all 0.4s cubic-bezier(0.16,1,0.3,1);animation:fadeUp 0.8s both;backdrop-filter:blur(20px)
+}
+.post-card:hover{transform:translateY(-5px);border-color:rgba(124,240,160,0.3);box-shadow:0 20px 50px rgba(0,0,0,0.4)}
+.post-cover{width:100%;height:300px;object-fit:cover;border-bottom:1px solid rgba(255,255,255,0.06)}
+.post-body{padding:30px}
+.post-meta{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#7cf0a0;margin-bottom:12px;font-weight:800}
+.post-title{font-size:28px;font-weight:900;margin-bottom:16px;letter-spacing:-0.5px}
+.post-text{font-size:15px;line-height:1.7;color:rgba(255,255,255,0.7);margin-bottom:20px}
+.post-footer{display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid rgba(255,255,255,0.05)}
+.author{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600}
+.author-avatar{width:24px;height:24px;border-radius:50%;background:#7cf0a0;display:grid;place-items:center;color:#000;font-size:10px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){
+  .content{padding:28px 20px}.content h1{font-size:32px}.nav{padding:12px 20px}
+  .nav{position:sticky;padding:12px 16px;align-items:flex-start;flex-direction:column;gap:12px}
+  .links{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:2px 0 8px;scrollbar-width:thin;scrollbar-color:rgba(124,240,160,.45) transparent}
+  .pill{flex:0 0 auto;padding:9px 13px}
+  .post-cover{height:200px}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="nav">
+    <div class="logo"><a href="index.html">P2NIIH</a></div>
+    <div class="links">
+      <a class="pill " href="index.html">Accueil</a>
+      <a class="pill " href="hq.html">Hq</a>
+      <a class="pill " href="info.html">Info</a>
+      <a class="pill active" href="forum.html">Forum</a>
+      <a class="pill " href="faq.html">FAQ</a>
+      <a class="pill " href="jouer.html">Jouer</a>
+      <a class="pill " href="port.html">Port</a>
+      <a class="pill " href="outils.html">Outils</a>
+      <a class="pill " href="dvars.html">Dvars</a>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Forum</h1>
+    <div class="sub">Actualités, rapports de bugs et mises à jour communautaires • P2NIIH</div>
+
+    <div class="posts">
+      <!-- Second Post -->
+      <article class="post-card">
+        <img class="post-cover" src="https://i.ytimg.com/vi/gerwp0YIIxE/maxresdefault.jpg" alt="Mron Virus Cover">
+        <div class="post-body">
+          <div class="post-meta">ALERTE • SÉCURITÉ</div>
+          <h2 class="post-title">Mron Virus</h2>
+          <div class="post-text">
+            The MRON project designed for MW2019 has been accused by the community of having implemented a virus in their: sewi.exe. It's a fact; analyzing the AIO shows that it is not safe at all. Several people and servers have shared this mod without realizing it was a virus. If you are using it right now, you should reset your computer immediately.
+          </div>
+          <div class="post-footer">
+            <div class="author">
+              <div class="author-avatar">v3</div>
+              <span>Par v3sx</span>
+            </div>
+            <div style="font-size:12px;opacity:0.4">Posté le 11 Novembre 2025</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Premier Post -->
+      <article class="post-card">
+        <img class="post-cover" src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/store/games/vanguard/overview/VanguardPDP_Hero.png?imwidth=1920" alt="Acces Violation COD VG Cover">
+        <div class="post-body">
+          <div class="post-meta">URGENT • RAPPORT DE BUG</div>
+          <h2 class="post-title">Acces Violation COD VG</h2>
+          <div class="post-text">
+            Plusieurs signalements on etait fait a propos du Crack de Cod Vanguard 1.26 sur le fait que au lancement du jeu ou lors que le joueur appuis sur un bouton sa fait crash total le jeu en laissant juste une erreur nommé : Acces Violation vous pouvez trouver la cause c'est souvent le version.dll fournis sauf que malheureusement ce Version.dll ne dois pas etre supprimer car sinon le crack ne fonctionne pas nous vous conseillons d'eviter d'utiliser la version 1.26 au fait les crack VG en eux meme ne sont pas stable
+          </div>
+          <div class="post-footer">
+            <div class="author">
+              <div class="author-avatar">H4</div>
+              <span>Par Полина (H4)</span>
+            </div>
+            <div style="font-size:12px;opacity:0.4">Posté en Mai 2026</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</div>
+
+<script src='https://unpkg.com/@discord/embedded-app-sdk'></script>
+<script>
+  const discordSdk = new window.discordSdk.DiscordSDK('1566281154989133826');
+  async function setupDiscordSdk() {
+    try {
+      await discordSdk.ready();
+      console.log('Discord SDK is ready');
+    } catch (e) {
+      console.warn('Discord SDK not detected (normal browser)');
+    }
+  }
+  setupDiscordSdk();
+</script>
+</body>
+</html>

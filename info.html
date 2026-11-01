@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="P2N Info : Tout savoir sur le projet P2N, ses objectifs et ses partenaires.">
+<meta name="theme-color" content="#080b10">
+<title>P2N | Info</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#05070a;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.hero{min-height:100vh;background:linear-gradient(180deg,rgba(5,7,10,0.5),rgba(5,7,10,0.95)),url('https://www.psu.com/wp/wp-content/uploads/2021/11/Call-Of-Duty-Vanguard-Polina-Petrova.jpg');background-size:cover;background-attachment:fixed;background-position:center 20%}
+.nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:14px 36px;background:rgba(8,10,14,0.85);backdrop-filter:blur(24px) saturate(1.2);border-bottom:1px solid rgba(255,255,255,0.06)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px;letter-spacing:-1.5px;text-transform:uppercase;font-family:sans-serif}.logo a{color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+
+.links{display:flex;gap:6px}
+.pill{font-size:11px;letter-spacing:0.8px;font-weight:600;padding:9px 18px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.6);text-decoration:none;border-radius:100px;transition:all 0.35s cubic-bezier(0.16,1,0.3,1)}
+.pill:hover{background:rgba(255,255,255,0.1);color:#fff;transform:translateY(-1px)}.pill.active{background:#fff;color:#000;font-weight:800;box-shadow:0 4px 20px rgba(255,255,255,0.15)}
+
+.content{padding:50px 36px;max-width:850px;margin:0 auto;position:relative;z-index:10}
+.content h1{font-size:clamp(32px,5vw,48px);font-weight:900;letter-spacing:-1.5px;margin-bottom:24px;animation:fadeUp 0.8s;line-height:1.1}
+.info-text{animation:fadeUp 0.8s 0.1s both;line-height:1.7;color:rgba(255,255,255,0.8)}
+.info-text h2{font-size:24px;font-weight:800;margin:40px 0 16px;color:#fff;letter-spacing:-0.5px}
+.info-text p{margin-bottom:20px;font-size:16px}
+.info-text ul{margin:0 0 24px 20px;list-style:none}
+.info-text li{margin-bottom:12px;position:relative;padding-left:24px}
+.info-text li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:2px;background:#7cf0a0}
+.info-text strong{color:#fff;font-weight:700}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){
+  .content{padding:32px 20px}
+  .nav{position:sticky;padding:12px 16px;align-items:flex-start;flex-direction:column;gap:12px}
+  .links{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:2px 0 8px;scrollbar-width:thin;scrollbar-color:rgba(124,240,160,.45) transparent}
+  .pill{flex:0 0 auto;padding:9px 13px}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="nav">
+    <div class="logo"><a href="index.html">P2NIIH</a></div>
+    <div class="links">
+      <a class="pill " href="index.html">Accueil</a>
+      <a class="pill " href="hq.html">Hq</a>
+      <a class="pill active" href="info.html">Info</a>
+      <a class="pill " href="forum.html">Forum</a>
+      <a class="pill " href="faq.html">FAQ</a>
+      <a class="pill " href="jouer.html">Jouer</a>
+      <a class="pill " href="port.html">Port</a>
+      <a class="pill " href="outils.html">Outils</a>
+      <a class="pill " href="dvars.html">Dvars</a>
+    </div>
+  </div>
+  <div class="content">
+    <h1>P2N – Une plateforme centralisée pour vos installations et vos outils Call of Duty</h1>
+    
+    <div class="info-text">
+      <h2>Présentation du projet</h2>
+      <p><strong>P2N</strong> est un projet ouvert à tous, conçu et développé par <strong>Полина (H4)</strong>. Il s'agit d'un outil directement lié à <strong>Jup9iw</strong>, ayant pour objectif de simplifier et de centraliser l'accès à différentes ressources, installations et utilitaires destinés à l'univers de Call of Duty.</p>
+      <p>L'idée derrière P2N est simple : proposer une solution pratique, accessible et organisée permettant aux utilisateurs de retrouver et d'installer leurs jeux Call of Duty, leurs outils ainsi que diverses ressources complémentaires, sans avoir à parcourir une multitude de serveurs Discord, de sites différents ou de launchers indépendants.</p>
+      <p>Nous souhaitons mettre à disposition une plateforme qui facilite l'expérience des utilisateurs en regroupant plusieurs ressources au même endroit. P2N a ainsi été pensé pour réduire les manipulations inutiles, améliorer l'accessibilité des contenus et offrir un environnement plus simple à utiliser au quotidien.</p>
+
+      <h2>Notre objectif</h2>
+      <p>L'objectif principal de P2N est de rendre l'accès aux ressources de l'univers Call of Duty aussi simple que possible.</p>
+      <p>Nous savons que trouver certaines installations, certains outils ou certaines ressources peut rapidement devenir compliqué. Entre les différents serveurs communautaires, les liens dispersés, les launchers multiples et les sources parfois difficiles à retrouver, l'expérience peut vite devenir contraignante.</p>
+      <p>C'est précisément pour répondre à cette problématique que P2N a été imaginé.</p>
+      <p>Notre ambition est de proposer un point d'accès centralisé permettant aux utilisateurs de retrouver facilement les ressources dont ils ont besoin, tout en conservant une organisation claire et une utilisation accessible à tous.</p>
+      <p>P2N ne cherche pas simplement à regrouper des fichiers : le projet vise également à faciliter l'accès aux différentes contributions de la communauté et à mettre en valeur le travail réalisé par les créateurs de ressources.</p>
+
+      <h2>Ressources et partenaires communautaires</h2>
+      <p>Afin de proposer un catalogue varié et régulièrement enrichi, P2N s'appuie sur différentes ressources issues de projets, de communautés et de contributeurs spécialisés dans l'univers de Call of Duty.</p>
+      <p>Parmi les principales sources et références utilisées, nous retrouvons notamment :</p>
+      <ul>
+        <li><strong>IW8-MOD</strong></li>
+        <li><strong>LUMEN</strong></li>
+        <li><strong>FITGIRL</strong></li>
+        <li><strong>COD BUILD COLLECTION (CBC)</strong></li>
+        <li>Ainsi que de nombreuses autres ressources et contributions communautaires.</li>
+      </ul>
+      <p>Ces différentes sources permettent d'enrichir le contenu proposé par P2N et de mettre à disposition des utilisateurs un ensemble de ressources diversifiées.</p>
+      <p>Il est également important de préciser que toutes les ressources présentes dans P2N ne proviennent pas nécessairement de sources externes. Certaines fonctionnalités, certains outils et certaines ressources sont directement réalisés par notre équipe dans le cadre du développement du projet.</p>
+      <p>Nous accordons une importance particulière à la contribution communautaire, à la création indépendante et à la valorisation du travail des différents développeurs et contributeurs.</p>
+
+      <h2>Les DVARs et les contributions</h2>
+      <p>Dans le cadre du projet, les DVARs sont notamment publiés par <strong>Atu</strong>.</p>
+      <p>Ces contributions participent à l'enrichissement des ressources disponibles et permettent aux utilisateurs intéressés de retrouver différents éléments liés à la configuration et à la personnalisation de leur expérience.</p>
+      <p>Nous souhaitons également remercier les personnes qui contribuent, directement ou indirectement, à l'évolution de P2N. Chaque participation, chaque ressource partagée et chaque amélioration permettent de faire progresser le projet.</p>
+
+      <h2>Un projet ouvert à tous</h2>
+      <p>P2N a été conçu avec une philosophie simple : <strong>rendre les ressources accessibles au plus grand nombre</strong>.</p>
+      <p>Le projet est ouvert à tous les utilisateurs intéressés, qu'ils soient habitués à l'univers de Call of Duty ou qu'ils découvrent simplement les différents outils et ressources disponibles.</p>
+      <p>Nous souhaitons proposer une expérience compréhensible, organisée et accessible, sans imposer aux utilisateurs de rejoindre une multitude de communautés ou de passer par différents logiciels pour accéder aux contenus recherchés.</p>
+      <p>Notre volonté est de construire progressivement un environnement centralisé, pratique et évolutif, capable de répondre aux besoins de sa communauté.</p>
+
+      <h2>Indépendance et affiliation</h2>
+      <p>Nous tenons à apporter une précision importante concernant l'identité et le statut du projet.</p>
+      <p><strong>P2N est un projet indépendant et n'est en aucun cas affilié, associé, sponsorisé ou officiellement soutenu par Activision.</strong></p>
+      <p>P2N est développé indépendamment par Полина (H4) et s'inscrit dans une démarche communautaire et non officielle.</p>
+      <p>Les noms, marques, jeux et éléments appartenant à leurs propriétaires respectifs restent la propriété de ces derniers. Leur mention dans le cadre du projet sert uniquement à identifier les ressources, les produits ou les environnements concernés.</p>
+
+      <h2>Notre vision pour l'avenir</h2>
+      <p>P2N est un projet qui a vocation à évoluer avec le temps.</p>
+      <p>Nous souhaitons continuer à améliorer son organisation, enrichir son catalogue de ressources, développer nos propres outils et faciliter toujours davantage l'accès aux différents contenus proposés.</p>
+      <p>Notre priorité reste de proposer une solution centralisée, pratique et accessible, tout en respectant le travail des créateurs et des communautés dont proviennent certaines ressources.</p>
+      <p>Nous croyons qu'un projet communautaire peut devenir une véritable référence lorsqu'il repose sur une bonne organisation, une volonté d'amélioration continue et une communauté impliquée.</p>
+
+      <h2>Conclusion</h2>
+      <p>P2N, c'est avant tout une volonté de simplification : réunir au même endroit ce qui est habituellement dispersé entre plusieurs plateformes, serveurs et launchers.</p>
+      <p>Conçu par <strong>Полина (H4)</strong> et directement lié à <strong>Jup9iw</strong>, le projet rassemble des ressources communautaires, des outils, des installations et des contributions originales afin de proposer une expérience plus centralisée aux utilisateurs de l'univers Call of Duty.</p>
+      <p><strong>Un seul projet, plusieurs ressources, une expérience simplifiée.</strong></p>
+      <p>Bienvenue dans l'univers de P2N.</p>
+    </div>
+  </div>
+</div>
+<script src='https://unpkg.com/@discord/embedded-app-sdk'></script>
+<script>
+  const discordSdk = new window.discordSdk.DiscordSDK('1566281154989133826');
+  async function setupDiscordSdk() {
+    try {
+      await discordSdk.ready();
+      console.log('Discord SDK is ready');
+    } catch (e) {
+      console.warn('Discord SDK not detected (normal browser)');
+    }
+  }
+  setupDiscordSdk();
+</script>
+</body>
+</html>
