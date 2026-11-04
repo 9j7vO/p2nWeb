@@ -51,6 +51,7 @@ body{font-family:'Inter',sans-serif;background:#05070a;color:#fff;overflow-x:hid
       <a class="pill " href="port.html">Port</a>
       <a class="pill " href="outils.html">Outils</a>
       <a class="pill " href="dvars.html">Dvars</a>
+      <a class="pill " href="version.html">Version</a>
     </div>
   </div>
   <div class="content">
@@ -116,13 +117,17 @@ body{font-family:'Inter',sans-serif;background:#05070a;color:#fff;overflow-x:hid
 </div>
 <script src='https://unpkg.com/@discord/embedded-app-sdk'></script>
 <script>
-  const discordSdk = new window.discordSdk.DiscordSDK('1566281154989133826');
   async function setupDiscordSdk() {
+    if (typeof window.discordSdk === 'undefined') {
+      console.warn('Discord SDK not detected (normal browser)');
+      return;
+    }
+    const discordSdk = new window.discordSdk.DiscordSDK('1566281154989133826');
     try {
       await discordSdk.ready();
       console.log('Discord SDK is ready');
     } catch (e) {
-      console.warn('Discord SDK not detected (normal browser)');
+      console.warn('Discord SDK error:', e);
     }
   }
   setupDiscordSdk();
